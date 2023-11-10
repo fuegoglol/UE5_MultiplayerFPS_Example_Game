@@ -33,6 +33,13 @@ public:
 	// ---------------------------------------------------------------------
 
 public:
+
+	UFUNCTION(BlueprintCallable)
+	UFPSTInputConfig* GetInputConfig() const;
+
+	UFUNCTION(BlueprintCallable)
+	UFPSTTaggedInputComponent* GetPLayerInputComponent() const;
+	
 protected:
 
 	/**

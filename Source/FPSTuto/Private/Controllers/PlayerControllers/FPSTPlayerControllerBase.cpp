@@ -36,6 +36,16 @@ void AFPSTPlayerControllerBase::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+UFPSTInputConfig* AFPSTPlayerControllerBase::GetInputConfig() const
+{
+	return InputConfig;
+}
+
+UFPSTTaggedInputComponent* AFPSTPlayerControllerBase::GetPLayerInputComponent() const
+{
+	return Cast<UFPSTTaggedInputComponent>(InputComponent);
+}
+
 void AFPSTPlayerControllerBase::SetupInputComponent()
 {
 	Super::SetupInputComponent();
